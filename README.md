@@ -1,7 +1,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&customColorList=12,20,24&text=Swapnil%20Yadav&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=38&desc=ML%20Engineer%20%7C%20Data%20Scientist%20%7C%20AI%20Builder&descSize=18&descAlignY=60"/>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=3000&pause=800&color=00FF41&center=true&vCenter=true&width=900&lines=B.Tech+CSE+(AI+%26+DS)+%40+IIIT+Manipur+%F0%9F%8E%93;ML+Engineer+%7C+Data+Scientist+%7C+AI+Builder+%F0%9F%A4%96;DecodeLabs+Data+Science+Intern+%F0%9F%92%BC;PyTorch+%7C+XGBoost+%7C+SHAP+%7C+Streamlit+%F0%9F%94%A5;NPTEL+Elite+Top+2%25+%7C+150%2B+LeetCode+Problems+%F0%9F%8F%86" alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=3000&pause=800&color=00FF41&center=true&vCenter=true&width=900&lines=B.Tech+CSE+(AI+%26+DS)+%40+IIIT+Manipur+%F0%9F%8E%93;ML+Engineer+%7C+Data+Scientist+%7C+AI+Builder+%F0%9F%A4%96;FlyRankAI+Machine+Learning+Intern+%F0%9F%92%BC;PyTorch+%7C+XGBoost+%7C+SHAP+%7C+Streamlit+%F0%9F%94%A5;NPTEL+Elite+Top+2%25+%7C+150%2B+LeetCode+Problems+%F0%9F%8F%86" alt="Typing SVG"/>
 </p>
 
 <p align="center">
