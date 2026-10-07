@@ -5,6 +5,7 @@ Edit PROJECTS below to change the project cards.
 """
 from html import escape
 from pathlib import Path
+import math
 import textwrap
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -260,6 +261,66 @@ def card(p, idx):
     (ASSETS / "projects" / f'{p["slug"]}.svg').write_text(svg, encoding="utf-8")
 
 
+# ---------------------------------------------------------------- kaggle medal
+
+def medal():
+    W, H = 1000, 170
+    BRONZE, BRONZE_LIGHT = "#cd7f32", "#f2b880"
+    mx, my = 96, 98
+
+    star = []
+    for i in range(10):
+        r = 17 if i % 2 == 0 else 7.5
+        ang = math.radians(-90 + i * 36)
+        star.append(f"{mx + r * math.cos(ang):.1f},{my + r * math.sin(ang):.1f}")
+
+    stats = []
+    for i, (value, label) in enumerate([("287th", "PLACE"), ("3,947", "TEAMS"), ("Top 8%", "FINISH")]):
+        x = 700 + i * 96
+        stats.append(
+            f'<text x="{x}" y="96" font-family="{SANS}" font-size="26" font-weight="700" '
+            f'fill="{BRONZE_LIGHT if i == 0 else INK}">{value}</text>'
+            f'<text x="{x}" y="118" font-family="{MONO}" font-size="10.5" letter-spacing=".6" fill="{DIM}">{label}</text>'
+        )
+
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Kaggle competition bronze medal: Biohub Cell Tracking During Development, 287th of 3,947 teams">
+<title>Kaggle Bronze Medal</title>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#140f0c"/><stop offset=".45" stop-color="#0d1426"/><stop offset="1" stop-color="#0a0f1c"/></linearGradient>
+  <radialGradient id="glow" cx="0.08" cy="0.5" r="0.5"><stop offset="0" stop-color="{BRONZE}" stop-opacity=".28"/><stop offset="1" stop-color="{BRONZE}" stop-opacity="0"/></radialGradient>
+  <radialGradient id="metal" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ffd9ad"/><stop offset=".45" stop-color="{BRONZE}"/><stop offset="1" stop-color="#7a3f14"/></radialGradient>
+  <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <clipPath id="c"><rect width="{W}" height="{H}" rx="16"/></clipPath>
+  <clipPath id="disc"><circle cx="{mx}" cy="{my}" r="44"/></clipPath>
+</defs>
+<style>
+  .shine {{ animation: sweep 4s ease-in-out infinite; }}
+  @keyframes sweep {{ 0% {{ transform: translateX(-120px) skewX(-20deg); }} 45%, 100% {{ transform: translateX(120px) skewX(-20deg); }} }}
+  {NO_MOTION}
+</style>
+<g clip-path="url(#c)">
+  <rect width="{W}" height="{H}" fill="url(#bg)"/>
+  <rect width="{W}" height="{H}" fill="url(#glow)"/>
+  <polygon points="64,-2 90,-2 108,58 82,58" fill="#1e3a5f"/>
+  <polygon points="128,-2 102,-2 84,58 110,58" fill="#3b2f6b"/>
+</g>
+<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="16" fill="none" stroke="{EDGE}"/>
+
+<circle cx="{mx}" cy="{my}" r="44" fill="url(#metal)" stroke="{BRONZE_LIGHT}" stroke-width="1.5"/>
+<circle cx="{mx}" cy="{my}" r="34" fill="none" stroke="#7a3f14" stroke-opacity=".7" stroke-width="2"/>
+<polygon points="{" ".join(star)}" fill="#fff1e0" fill-opacity=".9"/>
+<g clip-path="url(#disc)"><rect class="shine" x="{mx - 20}" y="{my - 50}" width="40" height="100" fill="url(#shine)"/></g>
+
+<text x="172" y="62" font-family="{MONO}" font-size="12" letter-spacing="1.2" fill="{BRONZE_LIGHT}">KAGGLE · COMPETITION BRONZE MEDAL · 2026</text>
+<text x="172" y="96" font-family="{SANS}" font-size="22" font-weight="700" fill="{INK}">Biohub: Cell Tracking During Development</text>
+<text x="172" y="122" font-family="{SANS}" font-size="15" fill="{MUTED}">Research competition with a $60,000 prize pool</text>
+<line x1="672" y1="58" x2="672" y2="124" stroke="{EDGE}"/>
+{"".join(stats)}
+</svg>
+'''
+    (ASSETS / "kaggle-bronze.svg").write_text(svg, encoding="utf-8")
+
+
 # ---------------------------------------------------------------- footer
 
 def wave(width, base, amp, length):
@@ -305,5 +366,6 @@ if __name__ == "__main__":
     header()
     for i, p in enumerate(PROJECTS, 1):
         card(p, i)
+    medal()
     footer()
     print("assets written to", ASSETS)
