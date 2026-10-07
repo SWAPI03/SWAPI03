@@ -22,9 +22,12 @@ jobs:
             dist/snake-light.svg?color_snake=#7c3aed&color_dots=#ebedf0,#bae6fd,#7dd3fc,#38bdf8,#0284c7
             dist/snake-dark.svg?color_snake=#a78bfa&color_dots=#161b22,#0c4a6e,#0369a1,#0ea5e9,#7dd3fc
 
+      # dist/ is created by the snk container as root, so publish from a copy
       - name: Publish to the output branch
-        working-directory: dist
         run: |
+          mkdir -p "$RUNNER_TEMP/out"
+          cp dist/*.svg "$RUNNER_TEMP/out/"
+          cd "$RUNNER_TEMP/out"
           git init -q -b output
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
