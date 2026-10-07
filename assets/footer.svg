@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="160" viewBox="0 0 1200 160" role="img" aria-label="Footer">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#38bdf8"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/>
+  </linearGradient>
+</defs>
+<style>
+  .w0 { animation: flow0 16s linear infinite; } @keyframes flow0 { to { transform: translateX(-600px); } }
+  .w1 { animation: flow1 11s linear infinite; } @keyframes flow1 { to { transform: translateX(-400px); } }
+  .w2 { animation: flow2 8s linear infinite; } @keyframes flow2 { to { transform: translateX(-300px); } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<text x="600.0" y="46" text-anchor="middle" font-family="'JetBrains Mono', 'Cascadia Code', 'Fira Code', Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="15" fill="#64748b">// thanks for stopping by</text>
+<path class="w0" d="M0,90 Q150.0,76 300.0,90 Q450.0,104 600.0,90 Q750.0,76 900.0,90 Q1050.0,104 1200.0,90 Q1350.0,76 1500.0,90 Q1650.0,104 1800.0,90 L1800,160 L0,160 Z" fill="url(#g)" fill-opacity=".25"/><path class="w1" d="M0,104 Q100.0,92 200.0,104 Q300.0,116 400.0,104 Q500.0,92 600.0,104 Q700.0,116 800.0,104 Q900.0,92 1000.0,104 Q1100.0,116 1200.0,104 Q1300.0,92 1400.0,104 Q1500.0,116 1600.0,104 L1600,160 L0,160 Z" fill="url(#g)" fill-opacity=".4"/><path class="w2" d="M0,118 Q75.0,108 150.0,118 Q225.0,128 300.0,118 Q375.0,108 450.0,118 Q525.0,128 600.0,118 Q675.0,108 750.0,118 Q825.0,128 900.0,118 Q975.0,108 1050.0,118 Q1125.0,128 1200.0,118 Q1275.0,108 1350.0,118 Q1425.0,128 1500.0,118 L1500,160 L0,160 Z" fill="url(#g)" fill-opacity=".85"/>
+</svg>
