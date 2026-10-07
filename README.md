@@ -2,7 +2,7 @@
 
 <img src="assets/header.svg" alt="Swapnil Yadav: ML Engineer, Data Scientist, AI Builder" width="100%" />
 
-<a href="https://github.com/SWAPI03"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&duration=3000&pause=900&color=38BDF8&center=true&vCenter=true&width=640&lines=Building+explainable+AI+and+LLM+tools;Machine+Learning+Intern+%40+FlyRank+AI;Merged+PRs+in+crewAI+and+Composio;B.Tech+CSE+(AI+%26+DS)+%40+IIIT+Manipur;250%2B+LeetCode+problems+solved" alt="Typing intro" /></a>
+<a href="https://github.com/SWAPI03"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&duration=3000&pause=900&color=38BDF8&center=true&vCenter=true&width=640&lines=Building+explainable+AI+and+LLM+tools;Ex-ML+Intern+%40+FlyRank+AI;Merged+PRs+in+crewAI+and+Composio;B.Tech+CSE+(AI+%26+DS)+%40+IIIT+Manipur;250%2B+LeetCode+problems+solved" alt="Typing intro" /></a>
 
 <a href="https://www.linkedin.com/in/swapnil-yadav1"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:swapnil300303@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
@@ -19,7 +19,7 @@
 class Swapnil:
     based_in  = "Lucknow, India"
     studying  = "B.Tech CSE (AI & DS) @ IIIT Manipur, 2023-27, CGPA 8.31"
-    interning = "Machine Learning Intern @ FlyRank AI"
+    interned  = ["ML Intern @ FlyRank AI", "Data Science Intern @ DecodeLabs"]
     focus     = ["explainable AI", "computer vision", "LLM apps", "MLOps"]
     building  = "CVE Copilot, an LLM assistant for vulnerability triage"
     learning  = ["RAG", "fine-tuning", "agents"]
@@ -69,8 +69,8 @@ I fix bugs in the AI tooling I use. Recent work in crewAI, LiteLLM, Composio and
 
 ## 💼 Experience
 
-**Machine Learning Intern · FlyRank AI** &nbsp;`Jul 2026 - Present`<br />
-Applied Search Intelligence: using ML to understand how pages rank and get discovered on Google, working with FlyRank's anonymized search data (up to ~79M rows, queried through DuckDB). [Work repo](https://github.com/SWAPI03/flyrank-ai-internship)
+**Machine Learning Intern · FlyRank AI** &nbsp;`Jul 2026 - Sep 2026`<br />
+Applied Search Intelligence: used ML to study how pages rank and get discovered on Google, working with FlyRank's anonymized search data (up to ~79M rows, queried through DuckDB). [Work repo](https://github.com/SWAPI03/flyrank-ai-internship)
 
 **Data Science Intern · DecodeLabs** &nbsp;`Jun 2026 - Jul 2026`<br />
 Built end-to-end ML pipelines covering EDA, feature engineering, SMOTE, PCA and K-Means, plus a fraud detection pipeline with ROC-AUC based model selection. [Task 1](https://github.com/SWAPI03/DecodeLabs_Intern_TASK1) · [Task 2](https://github.com/SWAPI03/DecodeLabs_Intern_TASK2)
