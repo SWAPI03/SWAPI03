@@ -419,8 +419,8 @@ def featured():
           + f'<path d="M{fx + 40},{fy + 168} L{fx + 26},{fy + 140} L{fx + 14},{fy + 140}" fill="none" stroke="{PAPER}" stroke-width="1.5"/>'
           + s.text(fx + 12, fy + 133, "GRAD-CAM", "mono", 10, PAPER, ls=1)
           + s.text(fx + 12, fy + 30, "R", "display", 24, PAPER)
-          + s.text(fx + 12, fy + fh - 12, "AUC 0.97", "mono", 11, PAPER, ls=1)
-          + s.text(fx + fw - 12, fy + fh - 12, "RECALL 96.2%", "mono", 11, PAPER, "end", ls=1)
+          + s.text(fx + 12, fy + fh - 12, "AUC 0.94", "mono", 11, PAPER, ls=1)
+          + s.text(fx + fw - 12, fy + fh - 12, "ACC 84.6%", "mono", 11, PAPER, "end", ls=1)
           + "</g></g>")
     t, _ = s.tag(48, 432, "CH.02  /  VISION")
     tsize = 60
@@ -429,12 +429,12 @@ def featured():
     ty = 432 + 27 + 14 + cap("display", tsize)
     s.add(t, s.text(46, ty, "CHEST X-RAY", "display", tsize, INK, ls=1))
     s.add(s.text(48, ty + 26, "PNEUMONIA DETECTION", "mono", 13, GREY, ls=2))
-    p, n = s.paragraph(48, ty + 56, "DenseNet121 fine-tuned to flag pneumonia, with Grad-CAM showing where it looks.",
+    p, n = s.paragraph(48, ty + 56, "DenseNet121 in TensorFlow/Keras flags pneumonia, with Grad-CAM showing where it looks.",
                        17, fx - 48 - 22, 22)
     chips_top = ty + 56 + (n - 1) * 22 + 16
-    s.add(p, s.chips(48, chips_top, ["PYTORCH", "DENSENET121"]))
-    s.add(s.sfx(50, chips_top + 26 + 10 + cap("display", 70), "95.5%", 70, rot=-4))
-    t, _ = s.tag(52, chips_top + 26 + 10 + cap("display", 70) + 10, "ACCURACY", 11)
+    s.add(p, s.chips(48, chips_top, ["TENSORFLOW", "DENSENET121"]))
+    s.add(s.sfx(50, chips_top + 26 + 10 + cap("display", 70), "99.7%", 70, rot=-4))
+    t, _ = s.tag(52, chips_top + 26 + 10 + cap("display", 70) + 10, "PNEUMONIA RECALL", 11)
     s.add(t)
     border("B")
 

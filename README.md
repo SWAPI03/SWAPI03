@@ -30,7 +30,7 @@ I like ML that can explain itself: Grad-CAM heatmaps, SHAP values, evals with re
 
 <img src="assets/titles/02-work.svg" width="100%" alt="Featured work" />
 
-<a href="https://github.com/SWAPI03?tab=repositories"><img src="assets/featured.svg" width="100%" alt="Featured projects. CH.01 CVE Copilot: LLM assistant for CVE triage, 100% within one severity level, about 0.07 INR per CVE. CH.02 Chest X-Ray Pneumonia Detection: DenseNet121 + Grad-CAM, 95.5% accuracy, 0.97 AUC, 96.2% recall. CH.03 Reliability-Aware AutoML: trust-weighted training tested on 60K+ rows across 4 datasets. CH.04 Telco Churn: 0.84 ROC-AUC, churn recall raised from 0.51 to 0.78." /></a>
+<a href="https://github.com/SWAPI03?tab=repositories"><img src="assets/featured.svg" width="100%" alt="Featured projects. CH.01 CVE Copilot: LLM assistant for CVE triage, 100% within one severity level, about 0.07 INR per CVE. CH.02 Chest X-Ray Pneumonia Detection: DenseNet121 + Grad-CAM in TensorFlow/Keras, 0.94 test AUC, 99.7% pneumonia recall, 84.6% accuracy. CH.03 Reliability-Aware AutoML: trust-weighted training tested on 60K+ rows across 4 datasets. CH.04 Telco Churn: 0.84 ROC-AUC, churn recall raised from 0.51 to 0.78." /></a>
 
 <p align="center">
   <b>READ ▸</b>
